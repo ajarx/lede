@@ -31,6 +31,11 @@ jobs:
       run : |
         git config --global user.email "mengzhaojun@live.com"
         git config --global user.name "ajarx"
+        
+    - name: Ignore upstream workflows
+      run: 
+        git update-index --skip-worktree ./github/workflows
+        
     - name: Load upstream commits
       run: 
         git pull https://github.com/coolsnowwolf/lede.git --no-edit --allow-unrelated-histories --strategy-option ours
