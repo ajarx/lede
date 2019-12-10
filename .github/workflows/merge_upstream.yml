@@ -34,7 +34,7 @@ jobs:
         
     - name: Ignore upstream workflows
       run: 
-        git update-index --skip-worktree .github/workflows
+        git update-index --skip-worktree .github/workflows/openwrt-ci.yml
         
     - name: Load upstream commits
       run: 
