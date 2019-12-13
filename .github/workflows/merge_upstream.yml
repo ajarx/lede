@@ -9,11 +9,11 @@
 name: 同步源码
 
 on:
-  schedule:
-    - cron: 0 15 * * *
-  push:
-    branches: 
-      - master
+  #schedule:
+  #  - cron: 0 15 * * *
+  #push:
+  #  branches: 
+  #    - master
 
 jobs:
   merge:
